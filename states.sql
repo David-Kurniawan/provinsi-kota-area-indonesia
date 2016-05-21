@@ -1,0 +1,74 @@
+-- phpMyAdmin SQL Dump
+-- version 4.0.10deb1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: May 22, 2016 at 12:28 AM
+-- Server version: 5.5.49-0ubuntu0.14.04.1
+-- PHP Version: 5.5.9-1ubuntu4.16
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `states`
+--
+
+CREATE TABLE IF NOT EXISTS `states` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(30) NOT NULL,
+  `country_id` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=93 ;
+
+--
+-- Dumping data for table `states`
+--
+
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+(11, 'ACEH', 1),
+(12, 'SUMATERA UTARA', 1),
+(13, 'SUMATERA BARAT', 1),
+(14, 'RIAU', 1),
+(15, 'JAMBI', 1),
+(16, 'SUMATERA SELATAN', 1),
+(17, 'BENGKULU', 1),
+(18, 'LAMPUNG', 1),
+(19, 'KEPULAUAN BANGKA BELITUNG', 1),
+(21, 'KEPULAUAN RIAU', 1),
+(31, 'DKI JAKARTA', 1),
+(32, 'JAWA BARAT', 1),
+(33, 'JAWA TENGAH', 1),
+(34, 'DI YOGYAKARTA', 1),
+(35, 'JAWA TIMUR', 1),
+(36, 'BANTEN', 1),
+(51, 'BALI', 1),
+(52, 'NUSA TENGGARA BARAT', 1),
+(53, 'NUSA TENGGARA TIMUR', 1),
+(61, 'KALIMANTAN BARAT', 1),
+(62, 'KALIMANTAN TENGAH', 1),
+(63, 'KALIMANTAN SELATAN', 1),
+(64, 'KALIMANTAN TIMUR', 1),
+(65, 'KALIMANTAN UTARA', 1),
+(71, 'SULAWESI UTARA', 1),
+(72, 'SULAWESI TENGAH', 1),
+(73, 'SULAWESI SELATAN', 1),
+(74, 'SULAWESI TENGGARA', 1),
+(75, 'GORONTALO', 1),
+(76, 'SULAWESI BARAT', 1),
+(81, 'MALUKU', 1),
+(82, 'MALUKU UTARA', 1),
+(91, 'PAPUA', 1),
+(92, 'PAPUA BARAT', 1);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
